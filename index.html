@@ -188,19 +188,19 @@
 
         const boardOptions = [
             { value: "", text: "select_placeholder" },
-            { value: "66", text: "Setup 66: Seeed XIAO Round Display (GC9A01)" },
-            { value: "500", text: "Setup 500: Seeed Wio Terminal" },
-            { value: "501", text: "Setup 501: Seeed XIAO Round Display" },
-            { value: "502", text: "Setup 502: Seeed XIAO 7.5\" ePaper" },
-            { value: "503", text: "Setup 503: Seeed XIAO 5.83\" ePaper" },
-            { value: "504", text: "Setup 504: Seeed XIAO 2.9\" ePaper" },
-            { value: "505", text: "Setup 505: Seeed XIAO 1.54\" ePaper" },
-            { value: "506", text: "Setup 506: Seeed XIAO 4.26\" ePaper" },
-            { value: "507", text: "Setup 507: Seeed XIAO 4.2\" ePaper" },
-            { value: "508", text: "Setup 508: Seeed XIAO 2.13\" ePaper" },
-            { value: "509", text: "Setup 509: Seeed XIAO 7.3 colorful\" ePaper" },
-            { value: "520", text: "Setup 520: Seeed reTerminal 7.5\" ePaper" },
-            { value: "666", text: "Setup 666: Seeed XIAO Default (ILI9341)" },
+            { value: "66", text: "Seeed XIAO Round Display (GC9A01)" },
+            { value: "500", text: "Seeed Wio Terminal" },
+            { value: "501", text: "Seeed XIAO Round Display" },
+            { value: "502", text: "Seeed XIAO 7.5\" ePaper" },
+            { value: "503", text: "Seeed XIAO 5.83\" ePaper" },
+            { value: "504", text: "Seeed XIAO 2.9\" ePaper" },
+            { value: "505", text: "Seeed XIAO 1.54\" ePaper" },
+            { value: "506", text: "Seeed XIAO 4.26\" ePaper" },
+            { value: "507", text: "Seeed XIAO 4.2\" ePaper" },
+            { value: "508", text: "Seeed XIAO 2.13\" ePaper" },
+            { value: "509", text: "Seeed XIAO 7.3\" colorful ePaper" },
+            { value: "520", text: "Seeed reTerminal 7.5\" ePaper" },
+            { value: "666", text: "Seeed XIAO Default (ILI9341)" },
         ];
 
         function switchLanguage(lang) {
@@ -236,7 +236,7 @@
             const selector = document.getElementById('boardSelector');
             const selectedValue = parseInt(selector.value, 10);
             const ePaperDiv = document.getElementById('ePaperOptions');
-            const isEpaper = (selectedValue >= 502 && selectedValue <= 508);
+            const isEpaper = (selectedValue >= 502 && selectedValue <= 509);
 
             if (isEpaper) {
                 ePaperDiv.style.display = 'block';
