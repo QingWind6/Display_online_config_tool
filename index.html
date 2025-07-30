@@ -111,6 +111,11 @@
             margin-top: -5px;
             margin-bottom: 10px;
         }
+        .final-instruction-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -128,7 +133,7 @@
         </select>
         
         <div id="ePaperOptions" style="display: none;">
-            <h3 data-lang-key="step2_title">Step 2: (ePaper Only) Select Your Driver Board Type</h3>
+            <h2 data-lang-key="step2_title">Step 2: (ePaper Only) Select Your Driver Board Type</h2>
             <div class="epaper-options">
                 <label>
                     <input type="radio" name="driverBoard" value="driver" onchange="generateConfig()" checked>
@@ -141,8 +146,9 @@
             </div>
         </div>
 
-        <h3 data-lang-key="step3_title">Final step: Copy the Generated Code</h3>
+        <h2 data-lang-key="step3_title">Final step: Copy the Generated Code</h2>
         <p class="final-instruction" data-lang-key="final_step_instruction"></p>
+        <img src="img.png" alt="Instructional image" class="final-instruction-img">
         <div class="code-container">
             <pre><code id="outputCode"></code></pre>
             <button id="copyButton" class="copy-btn" onclick="copyToClipboard()" title="Copy Code">
@@ -160,7 +166,7 @@
                 step1_title: "Step 1: Select Your Hardware",
                 step2_title: "Step 2: (ePaper Only) Select Your Driver Board Type",
                 step3_title: "Final step: Copy the Generated Code",
-                final_step_instruction: "Copy the generated code and paste it into your <code>driver.h</code> file.",
+                final_step_instruction: "Create a <code>driver.h</code> file and paste the following code into it.",
                 output_placeholder: "// Please select a hardware configuration from the dropdown menu above.",
                 select_placeholder: "-- Please select your hardware configuration --",
                 epaper_option_driver: "Seeed ePaper Driver Board",
@@ -172,7 +178,7 @@
                 step1_title: "步骤 1: 选择您的硬件",
                 step2_title: "步骤 2: (仅ePaper) 选择您的驱动板类型",
                 step3_title: "步骤 3: 复制生成的代码",
-                final_step_instruction: "将生成的代码复制并粘贴到您的 <code>driver.h</code> 文件中。",
+                final_step_instruction: "请创建一个名为 <code>driver.h</code> 的文件，并将以下代码粘贴到其中。",
                 output_placeholder: "// 请从上方的下拉菜单中选择一个硬件配置。",
                 select_placeholder: "-- 请从这里选择您的硬件配置 --",
                 epaper_option_driver: "Seeed ePaper Driver Board",
